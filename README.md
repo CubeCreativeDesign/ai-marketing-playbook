@@ -1,4 +1,4 @@
-# 🤖 AI Marketing Playbook
+# AI Marketing Playbook
 ### Practical AI Workflows for Digital Marketing Agencies & Small Businesses
 
 **By Chad @ [Cube Creative Design](https://cubecreative.design)** — Partner & Chief "Smarketing" Officer
@@ -55,9 +55,9 @@ MIT — use it however you want. A shoutout is appreciated but not required.
 
 ## Connect
 
-- 🌐 [Cube Creative Design](https://cubecreative.design)
-- 💼 [LinkedIn](#) *(add your link)*
-- 📧 [Email](#) *(add your contact)*
+- [Cube Creative Design](https://cubecreative.design)
+- [LinkedIn] (https://www.linkedin.com/in/chadjtreadway/) 
+- [Contact](https://cubecreative.design/contact)
 
 ---
 
