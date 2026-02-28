@@ -33,9 +33,6 @@ Welcome! Check the [Resources](resources/) section for links to presentation mat
 | [Getting Started](getting-started/) | Claude basics, project setup, prompting fundamentals |
 | [Projects](projects/) | Complete Claude Project configurations for specific workflows |
 | [Cowork](cowork/) | Task templates and multi-step workflows for Claude Cowork |
-| [Prompts](prompts/) | Reusable prompt templates organized by use case |
-| [Automation](automation/) | Integration templates for Make.com, HubSpot, and more |
-| [Resources](resources/) | Tools, ROI calculators, and presentation materials |
 
 ## The Bottom Line
 
