@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+
+# Output files (drafts and briefs are generated per-use)
+output/2026-*/
+output/**/*.md
+!output/.gitkeep
+
+# Briefs directory contents
+briefs/**/*.md
+!briefs/.gitkeep
