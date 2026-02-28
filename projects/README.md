@@ -1,6 +1,6 @@
 # Claude Project Templates
 
-These are complete Claude Project configurations — including system instructions, recommended knowledge files, and usage examples. Each one is designed for a specific marketing workflow.
+These are complete Claude Project configurations — including system instructions and usage guidance. Each one is designed for a specific marketing workflow.
 
 ## How to Use These
 
@@ -13,13 +13,9 @@ These are complete Claude Project configurations — including system instructio
 
 | Template | What It Does | Best For |
 |---|---|---|
-| [Blog Content Workflow](blog-content-workflow.md) | End-to-end blog post creation with SEO | Content teams, solo marketers |
-| [Pest Control Marketing](pest-control-marketing.md) | Industry-specific content and strategy | Pest control companies and their agencies |
-| [SEO Optimization](seo-optimization.md) | Keyword research and on-page SEO | Anyone doing organic search |
-| [Client Onboarding](client-onboarding.md) | New client intake and setup | Agencies bringing on new accounts |
-| [Competitor Analysis](competitor-analysis.md) | Competitive research framework | Strategy and business development |
-| [Email Campaigns](email-campaigns.md) | Newsletter and drip campaign creation | Email marketers |
-| [Social Media Content](social-media-content.md) | Batch social content creation | Social media managers |
+| [Titles, Meta & Keywords](titles-meta-keywords.md) | Generates SEO title packages, meta descriptions, and keywords from blog content | Content marketers, SEO specialists, blog managers |
+| [Create or Optimize Prompts](create-optimize-prompts.md) | Helps craft and refine prompts for Claude using best practices | Anyone building Claude Projects or writing system prompts |
+| [Check Links](check-links.md) | Verifies citations, checks source accuracy, and validates all links in a document | Content editors, blog managers, anyone publishing sourced content |
 
 ## A Note on Customization
 

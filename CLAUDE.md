@@ -16,7 +16,7 @@ This is a public GitHub repository maintained by Chad at Cube Creative Design. I
 - Include "why this matters" context, not just "how to do it"
 - Dad jokes are welcome but not required
 
-## File Organization
+## Current File Organization
 
 ```
 ai-marketing-playbook/
@@ -25,48 +25,30 @@ ai-marketing-playbook/
 ├── LICENSE                            # MIT License
 │
 ├── getting-started/
-│   ├── README.md                      # Section overview
-│   ├── claude-basics.md               # Claude Projects vs Cowork vs Chat explained
-│   ├── setting-up-projects.md         # How to create and configure Claude Projects
-│   └── prompt-fundamentals.md         # Core prompting principles that actually work
+│   └── README.md                      # Claude basics — Projects vs Cowork vs Chat
 │
 ├── projects/
 │   ├── README.md                      # Index of all project templates
-│   ├── blog-content-workflow.md       # End-to-end blog creation pipeline
-│   ├── pest-control-marketing.md      # Industry-specific marketing project setup
-│   ├── seo-optimization.md            # SEO research and implementation workflow
-│   ├── client-onboarding.md           # New client intake and setup process
-│   ├── competitor-analysis.md         # Competitive research framework
-│   ├── email-campaigns.md             # Newsletter and drip campaign creation
-│   └── social-media-content.md        # Social content batch creation
+│   ├── titles-meta-keywords.md        # SEO title packages, meta descriptions, keywords
+│   ├── create-optimize-prompts.md     # Prompt engineering and optimization
+│   └── check-links.md                 # Citation verification and link checking
 │
-├── cowork/
-│   ├── README.md                      # What is Cowork and how to use it
-│   ├── task-templates/                # Reusable Cowork task configurations
-│   │   ├── content-review.md
-│   │   ├── data-extraction.md
-│   │   └── report-generation.md
-│   └── workflows/                     # Multi-step Cowork workflows
-│       └── weekly-content-pipeline.md
-│
-├── prompts/
-│   ├── README.md                      # How to use these prompts
-│   ├── research-prompts.md            # Prompts for research and analysis
-│   ├── writing-prompts.md             # Content creation prompts
-│   ├── strategy-prompts.md            # Business strategy and planning prompts
-│   └── client-communication.md        # Email drafts, proposals, reports
-│
-├── automation/
-│   ├── README.md                      # Overview of automation integrations
-│   ├── make-com-workflows.md          # Make.com integration templates
-│   └── hubspot-automation.md          # HubSpot + Claude workflows
-│
-└── resources/
-    ├── README.md                      # Additional resources and links
-    ├── recommended-tools.md           # Tools that pair well with Claude
-    ├── roi-calculator.md              # How to calculate AI ROI for your agency
-    └── presentation-materials.md      # Links to conference slides and recordings
+└── cowork/
+    └── private-schools/               # Full 8-stage blog pipeline for K-12 schools
+        ├── CLAUDE.md                  # Project workspace instructions
+        ├── README.md                  # Setup guide
+        ├── batch-template.md          # Batch processing format
+        ├── batch-queue.md             # Example topic queue
+        ├── instructions/              # 8 pipeline stage files (01 through 08)
+        ├── personas/                  # Writer voice profiles
+        ├── reference/                 # Citation rules, CTA rules, personas, etc.
+        └── output/                    # Generated drafts (gitignored)
 ```
+
+## Planned Sections (Coming Later)
+- `prompts/` — Reusable prompt templates organized by use case
+- `automation/` — Integration templates for Make.com, HubSpot, and more
+- `resources/` — Tools, ROI calculators, and presentation materials
 
 ## Content Guidelines
 - Each markdown file should start with a clear title and a one-sentence description of what it contains

@@ -21,10 +21,10 @@ I run marketing operations at Cube Creative Design, a digital agency specializin
 Start with the [Getting Started](getting-started/) section. It'll walk you through the basics before you dive into specific workflows.
 
 **If you already use Claude:**
-Jump straight to [Projects](projects/) for ready-to-use Claude Project configurations, or [Prompts](prompts/) for copy-paste prompt templates.
+Jump straight to [Projects](projects/) for ready-to-use Claude Project configurations.
 
 **If you're here from a conference:**
-Welcome! Check the [Resources](resources/) section for links to presentation materials and additional context from the talk.
+Welcome! More sections (prompts, automation, resources) are coming — star the repo to get notified.
 
 ## What's Inside
 
@@ -32,7 +32,9 @@ Welcome! Check the [Resources](resources/) section for links to presentation mat
 |---|---|
 | [Getting Started](getting-started/) | Claude basics, project setup, prompting fundamentals |
 | [Projects](projects/) | Complete Claude Project configurations for specific workflows |
-| [Cowork](cowork/) | Task templates and multi-step workflows for Claude Cowork |
+| [Cowork](cowork/) | Full Cowork project: 8-stage private school blog pipeline |
+
+**Coming soon:** Prompts, Automation (Make.com, HubSpot), and Resources.
 
 ## The Bottom Line
 
@@ -53,7 +55,7 @@ MIT — use it however you want. A shoutout is appreciated but not required.
 ## Connect
 
 - [Cube Creative Design](https://cubecreative.design)
-- [LinkedIn] (https://www.linkedin.com/in/chadjtreadway/) 
+- [LinkedIn](https://www.linkedin.com/in/chadjtreadway/)
 - [Contact](https://cubecreative.design/contact)
 
 ---
