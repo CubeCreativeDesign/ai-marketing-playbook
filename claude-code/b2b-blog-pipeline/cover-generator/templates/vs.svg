@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Layout "vs". Side A on the left, side B on the right. Color tokens come from theme.json. -->
+  <rect x="0" y="0" width="960" height="1080" fill="{{accent}}"/>
+  <rect x="960" y="0" width="960" height="1080" fill="{{bg}}"/>
+  <rect x="960" y="0" width="12" height="1080" fill="{{accent2}}"/>
+  <circle cx="966" cy="540" r="130" fill="{{accent2}}"/>
+  <circle cx="966" cy="540" r="130" fill="none" stroke="{{paper}}" stroke-width="10"/>
+</svg>

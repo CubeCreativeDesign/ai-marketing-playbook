@@ -1,0 +1,207 @@
+{
+  "_comment": "Text slots for each layout at 1920x1080. anchor: top = y is the cap top of line 1; bottom = y is the baseline of the last line; middle = y is the middle of the block. size is the full font size in px; the script shrinks text down to floor x size before it tries another layout. font is a role from theme.json fonts. fill and stroke are palette keys from theme.json or literal colors. top_min and bottom_max keep a block inside the art. A layout with a reverse block set accepts '::' titles (small text on top).",
+  "floor": 0.8,
+  "rotation": [
+    "band",
+    "split"
+  ],
+  "fallback": [
+    "stack"
+  ],
+  "layouts": {
+    "band": {
+      "template": "band.svg",
+      "description": "Light background, big headline top left, sub in a colored band along the bottom.",
+      "blocks": {
+        "headline": {
+          "font": "headline",
+          "size": 168,
+          "lh": 1.02,
+          "track": 0.01,
+          "left": 130,
+          "right": 1790,
+          "anchor": "bottom",
+          "y": 640,
+          "top_min": 95,
+          "align": "left",
+          "max_lines": 3,
+          "fill": "ink",
+          "upper": true
+        },
+        "sub": {
+          "font": "sub",
+          "size": 100,
+          "lh": 0.95,
+          "track": 0.01,
+          "left": 130,
+          "right": 1790,
+          "anchor": "middle",
+          "y": 868,
+          "top_min": 760,
+          "bottom_max": 985,
+          "align": "left",
+          "max_lines": 2,
+          "fill": "paper",
+          "upper": true
+        }
+      }
+    },
+    "split": {
+      "template": "split.svg",
+      "description": "Dark panel on the left with the text, graphic shapes on the right.",
+      "blocks": {
+        "headline": {
+          "font": "headline",
+          "size": 146,
+          "lh": 1.02,
+          "track": 0.01,
+          "left": 110,
+          "right": 1170,
+          "anchor": "bottom",
+          "y": 690,
+          "top_min": 110,
+          "align": "left",
+          "max_lines": 4,
+          "fill": "paper",
+          "upper": true
+        },
+        "sub": {
+          "font": "sub",
+          "size": 86,
+          "lh": 0.98,
+          "track": 0.01,
+          "left": 110,
+          "right": 1170,
+          "anchor": "top",
+          "y": 780,
+          "bottom_max": 990,
+          "align": "left",
+          "max_lines": 2,
+          "fill": "accent2",
+          "upper": true
+        }
+      }
+    },
+    "stack": {
+      "template": "stack.svg",
+      "description": "Full color background with a frame; centered text. Takes the longest titles.",
+      "blocks": {
+        "headline": {
+          "font": "headline",
+          "size": 160,
+          "lh": 1.0,
+          "track": 0.01,
+          "left": 150,
+          "right": 1770,
+          "anchor": "bottom",
+          "y": 640,
+          "top_min": 120,
+          "align": "center",
+          "max_lines": 3,
+          "fill": "paper",
+          "upper": true
+        },
+        "sub": {
+          "font": "sub",
+          "size": 92,
+          "lh": 0.98,
+          "track": 0.01,
+          "left": 150,
+          "right": 1770,
+          "anchor": "top",
+          "y": 730,
+          "bottom_max": 960,
+          "align": "center",
+          "max_lines": 2,
+          "fill": "accent2",
+          "upper": true
+        }
+      },
+      "reverse": {
+        "sub": {
+          "font": "sub",
+          "size": 80,
+          "lh": 0.98,
+          "track": 0.01,
+          "left": 150,
+          "right": 1770,
+          "anchor": "top",
+          "y": 200,
+          "align": "center",
+          "max_lines": 2,
+          "fill": "accent2",
+          "upper": true
+        },
+        "headline": {
+          "font": "headline",
+          "size": 170,
+          "lh": 1.0,
+          "track": 0.01,
+          "left": 150,
+          "right": 1770,
+          "anchor": "middle",
+          "y": 600,
+          "top_min": 330,
+          "align": "center",
+          "max_lines": 3,
+          "fill": "paper",
+          "upper": true,
+          "bottom_max": 980
+        }
+      }
+    },
+    "vs": {
+      "template": "vs.svg",
+      "description": "Two halves for 'A vs B' titles. Side A left, side B right, no sub.",
+      "blocks": {
+        "a": {
+          "font": "headline",
+          "size": 140,
+          "lh": 1.02,
+          "track": 0.01,
+          "left": 90,
+          "right": 830,
+          "anchor": "middle",
+          "y": 560,
+          "top_min": 120,
+          "bottom_max": 990,
+          "align": "center",
+          "max_lines": 3,
+          "fill": "paper",
+          "upper": true
+        },
+        "b": {
+          "font": "headline",
+          "size": 140,
+          "lh": 1.02,
+          "track": 0.01,
+          "left": 1090,
+          "right": 1830,
+          "anchor": "middle",
+          "y": 560,
+          "top_min": 120,
+          "bottom_max": 990,
+          "align": "center",
+          "max_lines": 3,
+          "fill": "ink",
+          "upper": true
+        },
+        "mark": {
+          "font": "headline",
+          "size": 110,
+          "lh": 1.0,
+          "track": 0.0,
+          "left": 860,
+          "right": 1060,
+          "anchor": "middle",
+          "y": 540,
+          "align": "center",
+          "max_lines": 1,
+          "fill": "ink",
+          "upper": true,
+          "text": "VS"
+        }
+      }
+    }
+  }
+}

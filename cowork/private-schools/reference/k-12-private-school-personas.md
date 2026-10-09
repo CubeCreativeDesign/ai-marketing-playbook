@@ -1,14 +1,16 @@
-# Reader Personas — K-12 Private Schools
+# Reader Personas: K-12 Private Schools
 
 Reader personas help you write content that speaks directly to the people you're trying to reach. Instead of writing for "school administrators" in general, you're writing for a specific person with specific problems, budgets, and decision-making authority.
 
 ## How to Build Your Personas
 
-Create 3-6 personas that represent your actual target audience. Each persona should represent a distinct segment — different school types, budget levels, or roles. The more specific you make them, the better your content will land.
+Create 3-6 personas that represent your actual target audience. Each persona should represent a distinct segment: different school types, budget levels, or roles. The more specific you make them, the better your content will land.
 
 ### What to Include in Each Persona
 
-For each persona, fill in the sections below. Use real data from your sales conversations, client intake forms, and industry research. Don't guess — base these on people you've actually talked to.
+For each persona, fill in the sections below. Use real data from your sales conversations, client intake forms, and industry research. Don't guess. Base these on people you've actually talked to, and give each persona a fictional name, never a real client's.
+
+Two templates are available. The long-form one below covers psychographics and the decision process in depth. `reference/READER-PERSONA-TEMPLATE.md` is a shorter fill-in version. Either works. Keep all finished personas in this file, because this is the file the pipeline reads.
 
 ---
 
@@ -17,10 +19,10 @@ For each persona, fill in the sections below. Use real data from your sales conv
 Copy this template for each persona you create.
 
 ```markdown
-# [Role Title] — [Persona Name]
+# [Role Title]: [Persona Name]
 
 ## Demographics
-- **Name:** [Give them a realistic name — it makes writing to them easier]
+- **Name:** [Give them a realistic, fictional name. It makes writing to them easier]
 - **Age:** [Typical age range for this role]
 - **Education:** [Degree, certifications relevant to the role]
 - **Professional Background:** [Career path that led them to this role]
@@ -86,12 +88,12 @@ tools against real-world inputs.]
 These are common persona types for agencies marketing to K-12 private schools. Pick the ones that match your client base.
 
 ### By Role
-- **Marketing Director / Director of Admissions** — Controls marketing budget, evaluates vendors, manages brand. Budget: $50K-$250K. Your primary buyer.
-- **Head of School / Principal (Mid-Range)** — Strategic oversight, wears many hats, manages board relationships. Budget: $30K-$75K. Often the final decision-maker.
-- **Principal (Lower-Cost School)** — Budget-constrained, mission-driven, hands-on everything. Budget: $5K-$15K. Needs to see ROI on every dollar.
-- **Virtual Academy Director** — Tech-forward, national reach, different enrollment challenges. Budget: $50K-$75K. Unique marketing needs.
-- **Faith-Based School Administrator** — Church-affiliated, community-focused, smaller enrollment. Budget: $25K-$50K. Balances faith mission with growth.
-- **Parent Researcher / Influencer** — Not a buyer, but shapes the conversation. Active volunteer, word-of-mouth driver.
+- **Marketing Director / Director of Admissions:** Controls marketing budget, evaluates vendors, manages brand. Budget: $50K-$250K. Your primary buyer.
+- **Head of School / Principal (Mid-Range):** Strategic oversight, wears many hats, manages board relationships. Budget: $30K-$75K. Often the final decision-maker.
+- **Principal (Lower-Cost School):** Budget-constrained, mission-driven, hands-on everything. Budget: $5K-$15K. Needs to see ROI on every dollar.
+- **Virtual Academy Director:** Tech-forward, national reach, different enrollment challenges. Budget: $50K-$75K. Unique marketing needs.
+- **Faith-Based School Administrator:** Church-affiliated, community-focused, smaller enrollment. Budget: $25K-$50K. Balances faith mission with growth.
+- **Parent Researcher / Influencer:** Not a buyer, but shapes the conversation. Active volunteer, word-of-mouth driver.
 
 ### By School Type
 - **Non-denominational college prep** (400-800 students, $18K-$35K tuition)
@@ -118,6 +120,8 @@ These are common persona types for agencies marketing to K-12 private schools. P
 
 ## How These Personas Are Used in the Pipeline
 
-- **Stage 2 (Blog Post Writing):** The writer tailors language, examples, and pain points to the selected reader persona's school type, budget, and challenges.
-- **Batch Queue:** Each entry specifies a Reader Persona so content targets a specific audience segment.
+- **Stage 0 (Deep Research):** Research questions lean toward the data this persona's school type cares about (tuition band, enrollment size, school choice in their state).
+- **Stage 1 (Topic Development):** The brief names the reader persona and the problem the post solves for them.
+- **Stage 2 (Blog Post Writing):** The writer tailors language, examples, and pain points to the selected reader persona's school type, budget, and challenges. The intro names the reader by role and situation in the first 75 words.
+- **Batch Queue:** Each entry's Reader column names one persona from this file, so content targets a specific audience segment.
 - **Practical Application sections:** Examples are grounded in the persona's school profile (size, budget, type) without naming specific schools.

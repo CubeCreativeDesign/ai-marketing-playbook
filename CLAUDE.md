@@ -18,37 +18,36 @@ This is a public GitHub repository maintained by Chad at Cube Creative Design. I
 
 ## Current File Organization
 
+Every template is a self-contained folder. A reader copies one folder out and uses it on its own, so a folder must never depend on files outside itself.
+
 ```
 ai-marketing-playbook/
-├── README.md                          # Overview, who I am, how to use this repo
+├── README.md                          # Overview, who I am, index of every template
 ├── CLAUDE.md                          # This file (project instructions for Claude Code)
+├── CHANGELOG.md                       # Repo-level change log
 ├── LICENSE                            # MIT License
 │
 ├── getting-started/
-│   └── README.md                      # Claude basics — Projects vs Cowork vs Chat
+│   └── README.md                      # Chat vs Projects vs Cowork vs Claude Code
 │
-├── projects/
-│   ├── README.md                      # Index of all project templates
-│   ├── titles-meta-keywords.md        # SEO title packages, meta descriptions, keywords
-│   ├── create-optimize-prompts.md     # Prompt engineering and optimization
-│   └── check-links.md                 # Citation verification and link checking
+├── projects/                          # Claude Project templates (paste-in instructions)
+│   ├── README.md
+│   ├── titles-meta-keywords.md
+│   ├── check-links.md
+│   ├── create-optimize-prompts.md
+│   └── prompt-check.md
 │
-└── cowork/
-    └── private-schools/               # Full 8-stage blog pipeline for K-12 schools
-        ├── CLAUDE.md                  # Project workspace instructions
-        ├── README.md                  # Setup guide
-        ├── batch-template.md          # Batch processing format
-        ├── batch-queue.md             # Example topic queue
-        ├── instructions/              # 8 pipeline stage files (01 through 08)
-        ├── personas/                  # Writer voice profiles
-        ├── reference/                 # Citation rules, CTA rules, personas, etc.
-        └── output/                    # Generated drafts (gitignored)
+├── cowork/
+│   └── private-schools/               # Stage 0 + 8 content stages, K-12 schools, no code
+│
+└── claude-code/
+    └── b2b-blog-pipeline/             # Scripted batch pipeline (own VERSION, CHANGELOG, HANDOFF)
 ```
 
-## Planned Sections (Coming Later)
-- `prompts/` — Reusable prompt templates organized by use case
-- `automation/` — Integration templates for Make.com, HubSpot, and more
-- `resources/` — Tools, ROI calculators, and presentation materials
+## Adding a New Template
+- Put it in the folder for the tool it runs in: `projects/`, `cowork/`, or `claude-code/`.
+- Add a row to the "What's Inside" table in `README.md` and a line to `CHANGELOG.md`.
+- A pipeline folder keeps its own `.gitignore` for `output/`, `research/` and similar. Use the `output/*` form with `!output/.gitkeep`, never `output/`, or the negation can't work.
 
 ## Content Guidelines
 - Each markdown file should start with a clear title and a one-sentence description of what it contains
@@ -61,4 +60,11 @@ ai-marketing-playbook/
 - Keep the README.md table of contents updated when adding new files
 - Maintain consistent heading structure (H1 for title, H2 for sections, H3 for subsections)
 - Test all relative links between files
-- Don't include any client-specific or proprietary information — keep examples generic or use fictional company names
+- Don't include any client-specific or proprietary information. Keep examples generic or use fictional company names.
+- Chad's byline and the Cube Creative Design links in the top-level README are intentional. Inside template folders, use placeholders such as `[YOUR_AGENCY]` and `[YOUR-AGENCY-DOMAIN]` instead.
+
+## Before Every Commit
+This repo is public. Before you commit:
+1. Grep for internal paths and names: home-directory paths, private repo names, client names, staff names, API keys, and cloud-drive links. Expect zero hits inside template folders.
+2. Run `gitleaks dir .` and expect "no leaks found".
+3. Check that every relative link and every file path a stage file cites exists.

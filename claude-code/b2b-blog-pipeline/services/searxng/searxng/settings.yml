@@ -1,0 +1,61 @@
+# SearXNG settings for a local, single-user instance.
+# Full reference: https://docs.searxng.org/admin/settings/index.html
+use_default_settings: true
+
+general:
+  instance_name: "Blog pipeline SearXNG"
+  donation_url: false
+  contact_url: false
+  enable_metrics: false
+
+server:
+  # REQUIRED: replace with your own random value before the first start, for example
+  #   openssl rand -hex 32
+  # SearXNG refuses to start with the default value.
+  secret_key: "ultrasecretkey"
+  limiter: false          # localhost-only, so bot detection is off and the JSON API works
+  public_instance: false
+  image_proxy: false
+  method: "GET"           # allows GET /search?q=...&format=json
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "en-US"
+  formats:
+    - html
+    - json                # the line that makes the API usable
+
+ui:
+  static_use_hash: true
+
+# Engines. Search engines block or CAPTCHA SearXNG instances over time, and a
+# blocked engine fails silently: the query just comes back with fewer (or zero)
+# results. This set returned relevant results for multi-word business queries
+# from a residential connection on 2026-10-09. Test any engine on its own with:
+#   curl "http://localhost:8888/search?q=test+query&format=json&engines=<name>" \
+#     | jq '.results | length, .unresponsive_engines'
+# and switch engines on or off here, then: docker compose restart searxng
+engines:
+  # Off: CAPTCHAs, access denied, or no or irrelevant results in testing.
+  - name: google
+    disabled: true
+  - name: duckduckgo
+    disabled: true
+  - name: startpage
+    disabled: true
+  - name: bing
+    disabled: true
+  - name: brave
+    disabled: true
+  - name: gmx               # worked, then CAPTCHA'd within the hour
+    disabled: true
+  # On: returned relevant results.
+  - name: duckduckgo web
+    disabled: false
+  - name: yep
+    disabled: false
+  - name: yandex
+    disabled: false
+  - name: fynd
+    disabled: false

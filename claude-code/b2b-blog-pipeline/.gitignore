@@ -1,0 +1,40 @@
+# --- Your work: never committed ------------------------------------------------
+output/*
+!output/.gitkeep
+!output/_done/
+output/_done/*
+!output/_done/.gitkeep
+research/*
+!research/.gitkeep
+reports/*
+!reports/.gitkeep
+briefs/*
+!briefs/BLOG-BRIEF-TEMPLATE.md
+inputs/*
+!inputs/README.md
+posts/
+logs/
+cover-generator/output/*
+!cover-generator/output/.gitkeep
+
+# --- Secrets -------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*api_key*
+*API_KEY*
+*secret*
+!services/searxng/searxng/settings.yml
+*token*
+*.pem
+*.key
+
+# --- Tooling noise -------------------------------------------------------------
+*.log
+*.xlsx
+*.csv
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.venv/

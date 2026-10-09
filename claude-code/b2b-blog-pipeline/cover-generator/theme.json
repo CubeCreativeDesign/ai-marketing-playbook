@@ -1,0 +1,40 @@
+{
+  "_comment": "Brand settings for the cover generator. Change the hex colors to your brand. Every template color token ({{bg}}, {{accent}} and so on) comes from the palette picked for a post. Add a palette by copying one and giving it a new name; --color then accepts that name. See RULES.md.",
+
+  "fonts": {
+    "headline": "Anton-Regular.ttf",
+    "sub": "BarlowCondensed-ExtraBold.ttf"
+  },
+
+  "default_color": "primary",
+
+  "_comment_topic_rules": "First match wins. Each value is a regular expression tested against the title plus --topic, in lowercase. A title that matches nothing uses default_color.",
+  "topic_rules": {
+    "alert": "\\b(warn|mistake|penalt|suspend|fake|scam|stop|cost|charge|fee|lose|losing|lost|drop|risk|fail|wrong|hurt|avoid)",
+    "growth": "\\b(revenue|roi|budget|growth|grow|pric|valuation|recurring|profit|margin|sell|money|invest|win)"
+  },
+
+  "palettes": {
+    "primary": {
+      "bg": "#F4F1EA",
+      "accent": "#1F3A5F",
+      "accent2": "#F2B33D",
+      "ink": "#14213D",
+      "paper": "#FFFFFF"
+    },
+    "alert": {
+      "bg": "#F6EFEA",
+      "accent": "#8C1C13",
+      "accent2": "#F2B33D",
+      "ink": "#2B0F0C",
+      "paper": "#FFFFFF"
+    },
+    "growth": {
+      "bg": "#EEF3EC",
+      "accent": "#1E5631",
+      "accent2": "#C9E265",
+      "ink": "#10261A",
+      "paper": "#FFFFFF"
+    }
+  }
+}

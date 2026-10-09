@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Layout "split". Color tokens come from theme.json. Text slots live in layouts.json. -->
+  <rect x="0" y="0" width="1920" height="1080" fill="{{bg}}"/>
+  <g fill="none" stroke="{{accent}}" stroke-width="28" opacity="0.9">
+    <circle cx="1600" cy="300" r="190"/>
+    <circle cx="1600" cy="300" r="90"/>
+  </g>
+  <rect x="1380" y="620" width="400" height="300" fill="{{accent2}}"/>
+  <g fill="{{accent}}">
+    <circle cx="1420" cy="980" r="18"/><circle cx="1480" cy="980" r="18"/><circle cx="1540" cy="980" r="18"/>
+    <circle cx="1600" cy="980" r="18"/><circle cx="1660" cy="980" r="18"/><circle cx="1720" cy="980" r="18"/>
+  </g>
+  <path d="M0 0 H1240 L1300 1080 H0 Z" fill="{{accent}}"/>
+  <rect x="110" y="64" width="200" height="12" fill="{{accent2}}"/>
+  <!-- Optional: add your logo here, for example <image href="logo.png" x="1480" y="80" width="300" height="60"/> -->
+</svg>

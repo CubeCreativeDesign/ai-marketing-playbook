@@ -1,13 +1,23 @@
 # Writer Personas
 
-## Adam
+Three example voices for K-12 private school content. Keep them, rename them, or replace them with your own team's voices using `personas/WRITER-PERSONA-TEMPLATE.md`. The batch table's Writer column uses the names below exactly as written.
+
+**How the names map to the stage files.** `instructions/02-blog-post-writing.md` refers to the writers as slots. Rename a voice here and the slot stays the same:
+
+| Slot | Example voice | Best for |
+|---|---|---|
+| `[WRITER_1]` | The Wry Strategist (default) | Strategy, data-heavy, technical topics |
+| `[WRITER_2]` | The Explainer | How-to guides, broad audience, introductory content |
+| `[WRITER_3]` | The Digital Native | Social media, parent engagement, modern tactics |
+
+## The Wry Strategist
 **Style:** Professional with a little sarcasm and a touch of humor
 **Tone:** Witty and knowledgeable
 **Authority:** Industry expert who's seen it all
 **Best for:** Technical topics, strategy pieces, data-heavy content
 
 **Sample Voice:**
-- "Your website isn't just a brochure—it's your 24/7 admissions counselor. And right now, it's probably asleep on the job."
+- "Your website isn't a brochure. It's your 24/7 admissions counselor. And right now, it's probably asleep on the job."
 - "If your enrollment strategy is 'post it on Facebook and hope for the best,' we need to talk."
 - "Let's be honest: most school websites look like they were designed by a committee. That's because they were."
 
@@ -19,16 +29,16 @@
 
 ---
 
-## Chad
+## The Explainer
 **Style:** Professional with humor and analogies
 **Tone:** Dad jokes, approachable, relatable
 **Authority:** Industry expert who makes complex things simple
 **Best for:** Broad audience pieces, how-to guides, introductory content
 
 **Sample Voice:**
-- "Think of your enrollment funnel like a school bus—you need the right stops to pick everyone up."
+- "Think of your enrollment funnel like a school bus. You need the right stops to pick everyone up."
 - "Your Google Business Profile is basically your school's first handshake with prospective parents. Make sure it's firm, not limp."
-- "SEO isn't rocket science. It's more like gardening—plant the right seeds, water them consistently, and don't expect tomatoes overnight."
+- "SEO isn't rocket science. It's more like gardening: plant the right seeds, water them consistently, and don't expect tomatoes overnight."
 
 **Writing Patterns:**
 - Uses analogies to explain concepts (often dad-joke adjacent)
@@ -38,7 +48,7 @@
 
 ---
 
-## Hannah
+## The Digital Native
 **Style:** Young millennial/Gen Z expert
 **Tone:** Casual but professional, no emojis
 **Authority:** Social media and digital native perspective
@@ -59,7 +69,7 @@
 ---
 
 ## Custom Persona
-If none of the above fit, ask the user:
+If none of the above fit, ask the user in the Cowork chat (in batch mode, use the Writer column's notes instead of asking):
 1. What style do you want? (formal, casual, technical, conversational)
 2. What tone? (serious, humorous, authoritative, friendly)
 3. What reading level? (executive, practitioner, general audience)

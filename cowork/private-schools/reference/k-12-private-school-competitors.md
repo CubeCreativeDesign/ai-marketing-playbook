@@ -1,12 +1,12 @@
 # Competitors
 
-Competitor domains to avoid linking to in blog content. When a statistic or source links to a competitor, find an alternative non-competitor source instead.
+Competitor domains the pipeline must never cite or link to. Stage 0 discards search results from these domains, and Stages 6, 7, and 8 never link to them. When a statistic only appears on a competitor's page, find the original source or a non-competitor source instead. `reference/source-policy.md` builds its exclusion list from this file.
 
-**Customize this list:** Add your own competitors' domains below.
+**Customize this list:** Replace the placeholders below with your competitors' domains, one per line. Use the bare domain so it matches every page on the site.
 
-* `https://competitor1.com/`
-* `https://competitor2.com/`
-* `https://competitor3.com/`
+* `[COMPETITOR_DOMAIN_1]` (for example, `competitor-agency.com`)
+* `[COMPETITOR_DOMAIN_2]`
+* `[COMPETITOR_DOMAIN_3]`
 
-## Examples of Private School Marketing Competitors
-Common competitors in the K-12 private school marketing space include school website platforms, enrollment management tools, and other agencies targeting the same audience. Research your market and add any domain you don't want to send traffic to.
+## What counts as a competitor
+Common competitors in the K-12 private school marketing space include school website platforms, enrollment management and admissions software vendors, and other agencies targeting the same audience. Research your market and add any domain you don't want to send traffic to. Review the list each quarter.

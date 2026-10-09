@@ -1,0 +1,8 @@
+# Python packages for the blog pipeline scripts.
+# Install: python3 -m pip install -r requirements.txt
+# (On a system Python that refuses, use a virtual environment:
+#   python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt)
+
+textstat>=0.7        # required: Stage 9 readability check (scripts/qc-readability.py)
+fonttools>=4.40      # optional: Stage 10 template covers (cover-generator/)
+playwright>=1.40     # optional: Stage 0 Gemini Deep Research (scripts/gemini-deep-research.py)

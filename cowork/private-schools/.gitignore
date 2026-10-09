@@ -1,11 +1,9 @@
 # macOS system files
 .DS_Store
 
-# Output files (drafts and briefs are generated per-use)
-output/2026-*/
-output/**/*.md
+# Generated per run: research files, briefs, and drafts.
+# Use the folder/* form so the .gitkeep negations work.
+output/*
 !output/.gitkeep
-
-# Briefs directory contents
-briefs/**/*.md
-!briefs/.gitkeep
+research/*
+!research/.gitkeep

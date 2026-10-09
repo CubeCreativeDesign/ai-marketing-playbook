@@ -4,10 +4,9 @@
 # Claude Code local settings
 .claude/settings.local.json
 
-# Output files (generated content, not tracked)
-**/output/**/*.md
-!**/output/.gitkeep
+# Secrets
+.env
+.env.*
+!.env.example
 
-# Briefs
-**/briefs/**/*.md
-!**/briefs/.gitkeep
+# Each template folder has its own .gitignore for its output, research and briefs.

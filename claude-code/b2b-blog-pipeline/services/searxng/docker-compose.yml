@@ -1,0 +1,35 @@
+# SearXNG: free, self-hosted metasearch for Stage 0 (Phase B2). Optional.
+# Bound to 127.0.0.1 only: no public port, no login surface.
+#
+# First run:
+#   1. Put a random secret in searxng/settings.yml (see the comment there).
+#   2. docker compose up -d          # from this folder
+#   3. curl "http://localhost:8888/search?q=test&format=json" | head -c 300
+#
+#   docker compose down              # stop
+#   docker compose pull && docker compose up -d   # update
+#   docker compose logs -f           # follow the logs
+
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8888:8080"        # host localhost:8888 -> container 8080
+    volumes:
+      - ./searxng:/etc/searxng:rw    # settings.yml lives here
+    environment:
+      - SEARXNG_BASE_URL=http://localhost:8888/
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    logging:
+      driver: json-file
+      options:
+        max-size: "2m"
+        max-file: "2"

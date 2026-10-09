@@ -1,0 +1,51 @@
+{
+  "_comment": "Router config for [YOUR_VERTICAL]. Goes at <project-dir>/instructions/router-config.json. Copy and adapt this file for each vertical. All fields are optional - any field omitted falls back to defaults in router.py.",
+
+  "vertical": "[YOUR_VERTICAL]",
+
+  "_comment_batch_table": "Columns the router expects in a batch table input. The router needs at least 2 of these to match a CSV/TSV/markdown table's header row to classify it as a batch table. The Topic and Primary Keyword pair is the canonical signal.",
+  "batch_table_columns": [
+    "Topic",
+    "Primary Keyword",
+    "Secondary Keywords",
+    "Goal",
+    "Seasonal Tie-In",
+    "Research/Notes"
+  ],
+
+  "_comment_slug_source": "Which column in the batch table to derive the slug from.",
+  "slug_source_column": "Topic",
+
+  "_comment_brief_markers": "Strings that must be present in a markdown file for it to be classified as a brief (Stage 1 output). Router requires at least (count - 1) matches to classify as HIGH confidence brief. These markers match the brief format: # BRIEF: header + structured sections.",
+  "brief_markers": [
+    "BRIEF:",
+    "Working title",
+    "Task summary",
+    "Output requirements",
+    "Section structure"
+  ],
+
+  "_comment_draft_stage_markers": "Walked most-advanced first. First match wins. Stage N marker means the file has completed stage N, so entry_stage = N + 1. Stage 2 marker means the file is a Stage 2/3 draft - router cannot reliably distinguish Stage 2 output from Stage 3 output, so it enters at Stage 3.",
+  "draft_stage_markers": {
+    "7": ["External Link Verification"],
+    "6": ["| Original Text | Linked Version |", "Internal Link Table"],
+    "5": ["# Publishing Package", "Publishing Package\n* TITLE:"],
+    "4": ["Recommended Titles", "SEO/Google Title"],
+    "2": ["{{TLDR}}"]
+  },
+
+  "_comment_research_markers": "Strings that identify a file as a Stage 0 research bundle (supporting material, not its own job).",
+  "research_markers": [
+    "## Direct Quotes",
+    "## Statistics and Data"
+  ],
+
+  "_comment_topic_seed": "Markdown/text files shorter than this (in words) with no brief or draft markers are classified as topic seeds.",
+  "topic_seed_max_words": 500,
+
+  "_comment_stop_words": "Removed from generated slugs when more than 2 non-stop-word tokens remain.",
+  "stop_words": [
+    "a", "an", "the", "in", "on", "at", "to", "for", "of",
+    "with", "is", "are", "and", "or", "but", "by", "from"
+  ]
+}

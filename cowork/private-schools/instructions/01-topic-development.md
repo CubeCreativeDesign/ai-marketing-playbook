@@ -1,17 +1,23 @@
 # Stage 1: Topic Development
 
+Stage 1 turns a topic and its Stage 0 research bundle into a topic brief that fixes the keywords, audience, angle and length for the post.
+
+**Output feeds:** Stage 2 accepts this brief as settled. It does not re-decide the keywords, audience, content balance or word count, so make those calls here. Stage 4 builds titles around the primary keyword you pick, and Stage 5 builds the URL from it.
+
+**Human check:** You, in the Cowork chat. In interactive mode, read the brief before Stage 2 starts and change anything that's off. In batch mode Claude does not stop, so put any concern (a weak keyword, thin research, a topic that overlaps a post you already have) in a `Notes for review` line at the end of the brief.
+
 ## Purpose
-Generate and refine blog topic ideas for K-12 private school marketing. This covers private, independent, faith-based, and virtual K-12 schools — but NOT home services or pest control (separate verticals).
+Generate and refine blog topic ideas for K-12 private school marketing. This covers private, independent, faith-based, and virtual K-12 schools. Other verticals you serve belong in their own Cowork projects.
 
 ## Who We Are
-**Customize this:** Replace with your own agency description. This section tells Claude who you are so it writes from the right perspective.
+[YOUR_AGENCY] is a digital marketing agency that markets TO private schools (as clients), not on behalf of schools to parents. Our content targets school administrators, marketing directors, and admissions teams who are evaluating whether to hire a marketing agency.
 
-Your agency markets TO private schools (as clients), not on behalf of schools to parents. Your content targets school administrators, marketing directors, and admissions teams who are evaluating whether to hire a marketing agency.
+Secondary audience: Parent researchers evaluating schools (because schools share our content and it builds topical authority).
 
-Secondary audience: Parent researchers evaluating schools (because schools share your content and it builds topical authority).
+**Customize this:** Replace [YOUR_AGENCY] with your agency name, and add a sentence or two about where you're based and who you serve. This section tells Claude whose voice the post is written in.
 
 ## Batch Mode
-When processing from a batch table (see `reference/batch-template.md`), skip Step 1 entirely. Pull Topic, Primary Keyword, Secondary Keywords, Goal, Seasonal Tie-In, and Research/Notes directly from the table row and proceed to Step 2.
+When processing from a batch table (see `batch-template.md`; the active queue is `batch-queue.md`), skip Step 1 entirely. Pull Topic, Primary Keyword, Secondary Keywords, Goal, Seasonal Tie-In, and Research/Notes directly from the table row and proceed to Step 2. Stage 0 has already run on the row's topic, so its bundle is waiting in `research/`.
 
 ## Cross-Vertical Adaptation
 When the user provides content from another vertical to adapt:
@@ -25,11 +31,11 @@ When the user provides content from another vertical to adapt:
 ## Topic Generation Process
 
 ### Step 1: Ask for Direction
-*Skip this step in batch mode — inputs come from the table.*
+*Skip this step in batch mode. Inputs come from the table.*
 
 Ask the user:
 - Do you have a specific topic in mind, or should I suggest options?
-- Is this tied to a seasonal campaign? (See seasonal calendar in `reference/seasonal-calendar.md`)
+- Is this tied to a seasonal campaign? (See the seasonal calendar in `reference/seasonal-calendar.md`.)
 - What's the primary goal: awareness, lead generation, or thought leadership?
 - Is this being adapted from another vertical? If so, provide the source content.
 
@@ -37,13 +43,19 @@ Ask the user:
 For any proposed topic, evaluate:
 - **Search demand**: Is anyone searching for this? What keywords apply?
 - **Competition**: Can we realistically rank for this?
-- **Relevance**: Does this serve school admins/marketers specifically?
+- **Relevance**: Does this serve school admins and marketers specifically?
 - **Differentiation**: Can we offer a unique angle vs. generic education marketing blogs?
 - **School type flexibility**: Does this topic work across multiple school types, or is it specific to one? Note which types it applies to (college prep, faith-based, virtual, lower-cost, etc.).
+- **Existing coverage**: Do you already have a post on this? If you can see your published posts (a sitemap, a blog index page, or a list the user shares), check them. A new post should take a different angle or replace the old one, not repeat it.
+
+**Interactive mode, no research yet:** If the topic was just chosen in this chat, stop here and run Stage 0 (`instructions/00-deep-research.md`) on it. Come back to Step 3 once the research bundle passes its gate.
 
 ### Step 3: Topic Brief
+Read the Stage 0 research bundle, `research/[topic-slug]-research.md`, before you write the brief. Use the topic slug Stage 0 created.
+
 Output a brief that includes:
 - Working title
+- Topic slug (the same one Stage 0 used)
 - Primary keyword (1)
 - Secondary keywords (2-3)
 - Target audience (admin, marketer, admissions director, parent)
@@ -51,13 +63,17 @@ Output a brief that includes:
 - Content angle/hook
 - Recommended word count (default 1,200; range 800-2,500)
 - Suggested content balance: SEO-Heavy (70/30), Balanced (50/50), or Narrative-Heavy (30/70)
+- Research bundle: `research/[topic-slug]-research.md`
+- Strongest evidence: the 3-5 verified quotes or statistics from the bundle that the angle rests on
+- Notes for review (batch mode, or any time something needs a human look)
 
-### Step 4: Deep Research Integration (Optional)
-If the user provides Google Deep Research output or other research:
-- Cross-reference the draft against research findings
-- Identify data points, statistics, and trends worth including
-- Flag anything the research covers that the brief missed
-- Note any claims that need verification before publishing
+### Step 4: Research Integration
+The Stage 0 bundle is the post's primary evidence. While you build the brief:
+- Shape the angle around what the research can actually support. A strong angle with no verified evidence behind it becomes a weak post.
+- Identify the data points, statistics, and trends worth including, and list the best ones in the brief.
+- Flag anything the research covers that the brief missed.
+- Never build the angle on an item the bundle tags `unverified`. If the topic needs a claim the bundle couldn't confirm, note it in the brief so Stage 2 verifies it or writes around it.
+- If the user attached extra research (a report, survey results, a Research/Notes link), cross-reference it against the bundle and note any claims that still need verification before publishing.
 
 ## Topic Categories
 
@@ -91,7 +107,7 @@ If the user provides Google Deep Research output or other research:
 - Chatbots and automated inquiry response
 - AI content strategies for school marketing
 - How AI is changing how parents search for schools
-- CRM for schools (HubSpot focus)
+- CRM for schools
 - Marketing automation for admissions
 
 ### Social Media & Content Strategy
@@ -138,6 +154,7 @@ If the user provides Google Deep Research output or other research:
 - Scholarship marketing to attract diverse families
 - Overcoming the "sticker shock" objection
 - ROI of private education messaging
+- School choice programs (vouchers, education savings accounts, tax-credit scholarships). Rules differ by state and change often, so check your state's current program pages before you build a topic on them.
 
 ### Lead Generation & Conversion
 - Landing page strategies for school admissions
@@ -154,4 +171,4 @@ If the user provides Google Deep Research output or other research:
 - Year-end giving and annual fund marketing
 
 ## Output
-Save the completed topic brief to `output/[topic-slug]-brief.md`
+Save the completed topic brief to `output/[topic-slug]-brief.md`.
