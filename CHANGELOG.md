@@ -8,6 +8,7 @@ Changes to the AI Marketing Playbook as a whole. Each pipeline folder also keeps
 - `claude-code/b2b-blog-pipeline/`: the scripted Claude Code blog pipeline for agencies that market to service businesses (template v2.0.2). It used to live in its own repo.
 - `projects/prompt-check.md`: grade any prompt against the Trust Insights frameworks and get a fixed version back.
 - `CHANGELOG.md` (this file).
+- A beta notice on the main README and both pipeline READMEs.
 
 ### Changed
 - `README.md`: a "pick your starting point" table, every template in one index, and a short Cowork vs Claude Code guide. The "coming soon" list is gone.

@@ -1,5 +1,7 @@
 # Private School Blog Pipeline: Claude Cowork Project
 
+> **Beta.** This pipeline is still in beta. Expect rough edges, and please [open an issue](https://github.com/yoderman94/ai-marketing-playbook/issues) when something breaks.
+
 A blog content pipeline built for Claude's Cowork feature: Stage 0 (research) plus 8 content stages. Designed for digital marketing agencies that market TO K-12 private schools (targeting school administrators, marketing directors, and admissions teams).
 
 This isn't a prompt template you paste into chat. It's a full Cowork project: a structured workspace with instructions, personas, reference files, and a batch processing system that Claude reads and follows automatically. It needs no code, no scripts, and no extra tools. Claude's built-in web search, web fetch, and Research do the work.

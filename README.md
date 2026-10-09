@@ -1,6 +1,8 @@
 # AI Marketing Playbook
 ### Practical AI Workflows for Digital Marketing Agencies & Small Businesses
 
+> **Beta.** These templates are still in beta. The pipelines change often and haven't all been tested end to end in every setup. Expect rough edges, and please [open an issue](https://github.com/yoderman94/ai-marketing-playbook/issues) when something breaks.
+
 **By Chad @ [Cube Creative Design](https://cubecreative.design)**, Partner & Chief "Smarketing" Officer
 
 ---

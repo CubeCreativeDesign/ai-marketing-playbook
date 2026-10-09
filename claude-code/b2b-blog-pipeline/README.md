@@ -1,5 +1,7 @@
 # B2B Service Blog Pipeline
 
+> **Beta.** This pipeline is still in beta. Expect rough edges, and please [open an issue](https://github.com/yoderman94/ai-marketing-playbook/issues) when something breaks.
+
 A [Claude Code](https://code.claude.com) workflow that researches, writes, fact-checks and packages SEO blog posts aimed at B2B service business owners. It's built for marketing agencies that serve one vertical (HVAC, plumbing, roofing, landscaping, commercial cleaning, IT services and so on) and write in their own voice, under their own byline.
 
 Give it a topic. It returns a publication-ready draft with a verified research bundle, titles, meta description, slug, internal and external links, a QC report, and a branded cover image.
